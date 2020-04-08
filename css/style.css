@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    font-size: 40px;
+}
+.hero_image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pc_guy.jfif");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_text {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+
+.hero_text i {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0 0.5em;
+    margin-top: 100px;
+}
+
+.hero_text i:hover {
+    transition-duration: 1s;
+    transform: scale(1.75);
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
+    color: rgb(52, 222, 238);
+}
+
+span:before {
+    content: "";
+    animation-name: words;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    color: rgb(52, 222, 238);
+    text-transform: uppercase;
+}
+
+@keyframes words {
+    0%{ content: " tom szczygiel";}
+    25%{ content: " front";}
+    50%{ content: " end";}
+    75%{ content: " developer";}
+    100%{ content: " tom szczygiel";}
+}
