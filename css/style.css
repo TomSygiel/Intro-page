@@ -9,6 +9,16 @@ body, html {
 }
 
 h1 {
+    color: rgb(52, 222, 238);
+    /* font-weight: 100; */
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
     color: white;
     width: 100%;
     font-size: 40px;
